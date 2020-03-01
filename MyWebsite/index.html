@@ -27,13 +27,14 @@
 			<div class="clear"></div>
 			
 			<div class="bot-header">
-				<a href="#" class="show-mobile"><img src="img/ham.svg" alt="menu"></a>
+				<a href="#" class="show-mobile"><img src="img/ham.svg" alt="menu" id="menu"></a>
 				<div class="logo">
 					<img src="img/logo.jpg" alt="logo">
 				</div>	
 				<div class="menu">					
 					<nav id="right-menu">						
-						<ul class="hide-mobile">
+						<ul class="hide-mobile" id="nav">
+							<p class="exit" id="exit"><a href="#"><img src="img/exit.svg" alt="exit logo"></a></p>		
 							<li><a href="index.html">TRANG CHỦ</a></li>
 							<li><a href="#mini-project">MINI PROJECT</a></li>
 							<li><a href="#lab">LAB</a></li>
@@ -41,7 +42,7 @@
 						</ul>
 					</nav>
 				</div>
-				<div class="search hide-mobile">
+				<div class="search hide-mobile" id="search">
 					<form action="index.html" method="post">
 						<input type="text" id="txtSearch" name="search" placeholder="Tìm kiếm...">
 						<input type="button" id="btnSearch" value="Tìm">
@@ -195,6 +196,32 @@
 		btn_search.addEventListener('click',function(e){
 			alert("Chức năng tìm kiếm không khả dụng - I only color my site ^^")
 		});
+		
+		var menu = document.getElementById('menu');
+		var nav = document.getElementById('nav');
+		var exit = document.getElementById('exit');
+		
+		
+		
+		menu.addEventListener('click',function(e){
+			nav.classList.add('show-desktop');
+			e.preventDefault();
+		});		
+		exit.addEventListener('click',function(e){
+			nav.classList.toggle('show-desktop');
+			e.preventDefault();
+		});
+		
+		
+		exit.addEventListener('click',function(e){
+			nav.classList.add('hide-mobile');
+			e.preventDefault();
+		});
+		
+		
+		
+		
+		
 	</script>
 </body>
 </html>
