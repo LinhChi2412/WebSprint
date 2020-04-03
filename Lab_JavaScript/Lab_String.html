@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Lab[string]</title>
+</head>
+
+<body>
+</body>
+	<script>
+		var hoten = prompt("Nhap ho ten: ");		
+		var arr = hoten.split(' ');
+		var ho = arr[0];
+		var ten = arr[arr.length-1];
+		arr.shift();
+		arr.pop();
+		var tenLot = arr.join(' ');
+		console.log('Ho: '+ho);
+		console.log('Ten lot : '+tenLot);
+		console.log('Ten: '+ten);
+		
+	</script>
+</html>

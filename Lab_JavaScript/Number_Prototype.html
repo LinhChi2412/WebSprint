@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+</body>
+	<script>
+		var enter="<br/>";
+		var n = new Number(241299);
+		document.write("So ban dau: "+n+enter);
+		
+		// trả về ký sớ lớn nhất
+		Number.prototype.maxDigit = function(){
+        var maxDigit = 0;
+        var number = this.valueOf();
+        while(number > 0){
+          var temp = number % 10;
+          maxDigit = maxDigit < temp ? temp : maxDigit;
+          number = (number - temp) / 10;
+        }
+        return maxDigit;
+      }		
+		 document.write("Ky so lon nhat: " + n.maxDigit()+enter);
+		
+		//ky so dao nguoc
+		Number.prototype.nguocDigit = function(){
+			var arr = [];
+			var kySoNguoc
+			var number = this.valueOf();
+			while(number>0){
+				var term = number%10;
+				arr.push(term);
+				number= (number-term)/10;
+			}
+			kySoNguoc = arr.join('');
+			return kySoNguoc;
+		}
+		document.write("Ky so nguoc: " + n.nguocDigit()+enter);
+		
+		//khai bao 2 so
+		var x = new Number(5);
+		var y = new Number(15);
+		document.write("Hai so x = "+x+", y = "+y+enter);
+		//uoc chung lớn nhất
+		Number.prototype.uocChungLonNhat=function(a,b){
+			while (a*b != 0){ 
+				if (a > b){
+					a %= b;
+				}else{
+					b %= a;
+				}
+			}
+			return a + b;
+		}
+		document.write("Uoc chung lon nhat: "+ x.uocChungLonNhat(x,y)+enter);
+		//boi chung nhỏ nhất
+		Number.prototype.boiChungNhoNhat=function(a,b){			
+			return (a*b)/n.uocChungLonNhat(a,b);
+		}
+		document.write("Boi chung nho nhat:" +x.boiChungNhoNhat(x,y)+enter);
+	</script>
+</html>

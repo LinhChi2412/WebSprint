@@ -1,0 +1,16 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Lab 12 - Calculating the average word length</title>
+</head>
+
+<body>
+</body>
+	<script>
+		var name = 'Nong Linh Chi';
+		var arrName = name.split(' ');
+		const total = arrName.reduce((acc,arrName)=>acc+arrName.length,0);
+		alert('Average of length: '+ total/arrName.length);
+	</script>
+</html>

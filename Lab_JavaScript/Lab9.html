@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Lab 9 - Using function expression </title>
+</head>
+
+<body>
+</body>
+	<script>
+		helloDeclaration(); // returns 'hello'
+		// assign function expression to a variable
+		var helloExpression = function() {
+		console.log('hello')
+		}
+		// declare function declaration
+		function helloDeclaration() {
+		console.log('hello')
+		}
+		// The function expression can only be invoked after assignment
+		helloExpression(); // returns 'hello'
+	</script>
+</html>

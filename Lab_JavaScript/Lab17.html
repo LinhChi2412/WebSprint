@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Finding the timestamp</title>
+</head>
+
+<body>
+</body>
+	<script>
+		var today = new Date();
+		var myBirthDay = new Date(today.getFullYear(), 11, 24);
+		var offset = myBirthDay.getTime() - today.getTime();
+		var countDown = Math.round(offset/1000/60/60/24);
+		alert('Hôm nay là: '+today);
+		alert('Sinh nhật của tui là: '+myBirthDay);
+		alert(`Còn ${countDown} ngày nữa đến sinh nhật của tui.`);
+	</script>
+</html>

@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Lab11 - Applying callback function </title>
+</head>
+
+<body>
+	<form>
+		<input type="button" value="Sort" onClick="sort()">
+		<input type="button" value="Map" onClick="map()">		
+		<input type="button" value="Reduce" onClick="reduce()">
+		<input type="button" value="Filter" onClick="filter()">
+	</form>
+</body>
+	<script>
+		var arr = [1,22,3,4,12,30];
+		document.write('Arr have not sort: '+arr+'<br/>');
+		
+		function sort(){
+				arr.sort(
+				function callbackSort(a,b){
+					return a-b;
+				}			
+			);
+			alert('Arr have sort: '+arr);
+		}
+		
+		function map(){
+			var mapArr= arr.map(function(item){
+				return item = item*2;
+			});
+			alert('Arr have * 2: '+mapArr);
+		}
+		
+		function reduce(){
+			var reduceArr=arr.reduce(function(sum,item){
+				return sum = sum+item;
+			});
+			alert('Arr have Sum: '+ reduceArr);
+		}
+		
+		function filter(){
+			var filterArr = arr.filter(function(item){
+				return item%2;
+			});
+			alert('Arr have filter: '+ filterArr);
+		}
+	</script>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

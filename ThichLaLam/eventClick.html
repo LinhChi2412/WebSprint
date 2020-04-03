@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		
+		label {
+			display: inline-block;
+			width: 100px;
+		}
+
+		input {
+			margin-bottom: 10px;
+		}
+		
+		.hight-light{
+			color: yellow;
+			background: red;
+		}
+	
+	</style>
+
+	<script>
+		function createTable() {
+			var rowNumber = document.getElementById('row').value;
+			var colNumber = document.getElementById('col').value;
+
+			// tạo node (element) <table>
+			var table = document.createElement('table');
+			// tạo đường viền cho table
+			table.setAttribute('border', '1');
+			// căn trái, bên trên cho table
+			table.style = 'margin-left: 100px; margin-top: 10px';
+			// tạo node <tbody>
+			var tbody = document.createElement('tbody');
+			// tạo hàng và cột
+			for(i = 0; i < rowNumber; i++) {
+				var row = document.createElement('tr');
+				for(j = 0; j < colNumber; j++){
+					var col = document.createElement('td');
+					// tạo nội dung cho các ô của bảng
+					col.innerHTML = i + '' + j;
+					// gắn ô vừa tạo vào hàng
+					row.appendChild(col);
+				}
+				// gắn hàng vừa tạo vào <tbody>
+				tbody.appendChild(row);
+			}
+			// gắn <tbody> vào làm con của <table>
+			table.appendChild(tbody);
+			// gắn table vào làm con của <body>
+			document.body.appendChild(table);
+			function hightLight(){
+				event.target.classList.toggle('hight-light');
+				var n = event.target['textContent'];
+				col.addEventListener('click',alert(n));
+			}
+		
+			tbody.addEventListener('click',hightLight);
+			
+		}
+		
+		
+	</script>
+</head>
+<body>
+	<h1>Tạo bảng bằng javaScript</h1>
+	<label>Nhập số hàng: </label>
+	<input type="text" id="row" value="" />
+	<br />
+	<label>Nhập số cột: </label>
+	<input type="text" id="col" value="" />
+	<br />
+	<button onclick="createTable()";>Tạo bảng</button>
+</body>
+</html>

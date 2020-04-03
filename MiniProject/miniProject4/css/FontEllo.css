@@ -1,0 +1,201 @@
+@charset "utf-8";
+/* CSS Document */
+
+@font-face {
+    font-family: 'fontello';
+	src: url(../font/fontello.eot);
+	src: url(../font/fontello.svg) format('svg'),
+		url(../font/fontello.ttf) format('truetype'),
+		url(../font/fontello.woff) format('woff');
+	
+    font-weight: normal;
+    font-style: normal;
+}
+
+.cart-icon:before {
+    font-family: fontello;
+    content: '\e808';
+	color: #605E5E;
+	font-size: 15px;
+}
+.facebook-icon:before, .twitter-icon:before, .linkedin-icon:before, .dontknow-icon:before, .vimeo-icon:before{
+	font-size: 20px;
+	color:#B9B9B9;
+}
+.facebook-icon:before{
+	font-family: fontello;
+    content: '\e801';
+	
+}
+.twitter-icon:before{
+	font-family: fontello;
+    content: '\e803';
+	
+}
+.linkedin-icon:before{
+	font-family: fontello;
+    content: '\e802';
+	
+}
+.dontknow-icon:before{
+	font-family: fontello;
+    content: '\e805';
+	
+}
+.vimeo-icon:before{
+	font-family: fontello;
+    content: '\e800';	
+}
+
+.solar-light:before, .eco-system:before, .eco-ideas:before, .energy:before{
+	font-size: 60px;
+}
+
+.solar-light:before{
+	font-family: fontello;
+	content: '\e811';
+}
+.eco-system:before{
+	font-family: fontello;
+	content: '\e812';
+}
+.eco-ideas:before{
+	font-family: fontello;
+	content: '\e814';
+}
+.energy:before{
+	font-family: fontello;
+	content: '\e815';
+}
+
+.ecology:before, .dynamic:before, .recycling:before{
+	font-size: 30px;
+	color: #61a93e;
+}
+.ecology:before{
+	font-family: fontello;
+	content: '\e80e';
+}
+.dynamic:before{
+	font-family: fontello;
+	content: '\e810';
+}
+.recycling:before{
+	font-family: fontello;
+	content: '\e80f';
+}
+
+
+.heart:after{
+	font-family: fontello;
+	content: '\e809';
+}
+.comment:after{
+	font-family: fontello;
+	content: '\e80a';
+}
+.in-day:after{
+	font-family: fontello;
+	content: '\e80b';
+}
+.star-icon:before, .add-cart-icon:before, .show-detail-icon:before{
+	color: #dadada;
+	font-size: 2px ;
+}
+.star-icon:before{
+	font-family: fontello;
+	content: '\e80c';	
+}
+.add-cart-icon:before{
+	font-family: fontello;
+	content: '\e808';
+}
+.show-detail-icon:before{
+	font-family: fontello;
+	content: '\f008';
+}
+
+.sun-icon:before, .water-icon:before, .volunteer-icon:before, .idea-icon:before{
+	color: #a09c97;font-size: 30px;
+}
+.sun-icon:before{
+	font-family: fontello;
+	content: '\e813';
+}
+.water-icon:before{
+	font-family: fontello;
+	content: '\e816';
+}
+.volunteer-icon:before{
+	font-family: fontello;
+	content: '\e817';
+}
+.idea-icon:before{
+	font-family: fontello;
+	content: '\e814';
+}
+
+.address-icon:before{
+	font-family: fontello;
+	content: '\e807';
+}
+.numberphone-icon:before{
+	font-family: fontello;
+	content: '\e804';
+}
+.email-icon:before{
+	font-family: fontello;
+	content: '\e806';
+}
+
+.fb-footer-icon:before, .tw-footer-icon:before, .in-footer-icon:before, .dn-footer-icon:before, .vi-footer-icon:before{
+	color: white;
+	font-size: 50px;
+}
+.fb-footer-icon:before{
+	font-family: fontello;
+	content: '\e801';
+}
+.tw-footer-icon:before{
+	font-family: fontello;
+	content: '\e803';
+}
+.in-footer-icon:before{
+	font-family: fontello;
+	content: '\e802';
+}
+.dn-footer-icon:before{
+	font-family: fontello;
+	content: '\e805';
+}
+.vi-footer-icon:before{
+	font-family: fontello;
+	content: '\e800';
+}
+
+.search-icon:before, .attach-icon:before{
+	font-size: 25px;
+	color: #62A93E;	
+}
+.search-icon:before{
+	font-family: fontello;
+	content: '\e818';
+}
+
+.attach-icon:before{
+	font-family: fontello;
+	content: '\e819';
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
